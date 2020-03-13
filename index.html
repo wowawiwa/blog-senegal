@@ -1,0 +1,622 @@
+<html>
+    <head>
+<!-- TODO:
+    Hotel Mermoz @ St Louis
+    Hotel de la poste @ St Louis
+    Hotel Djoloff @ Dakar -->
+
+        <!-- utf-8 contains almost all chars in all human languages -->
+        <meta charset="utf-8">
+
+        <!-- responsive meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Ba beneen yoon!</title>
+
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Open Sans:400,600" rel="stylesheet">
+
+        <style>
+            /* Globals */
+
+            body {
+                margin: 0;
+                box-sizing: border-box;
+
+                font-family: 'Open Sans', sans-serif;
+                color: #252525;
+                font-size: 1.2em;
+                line-height: 1.8;
+            }
+
+            /* Containers */
+
+            .header {
+                padding: 2em 0 6em 0;
+
+                margin-bottom: 75px;
+
+                text-align: center;
+                font-size: 4em;
+                color: white;
+                letter-spacing: 0.1em;
+
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img-reduced/1bl33mvzh3nj6.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .posts {
+                max-width: 1000px;
+                margin: 0 auto;
+                overflow: hidden;
+                padding: 5px;
+            }
+
+            .gallery,
+            iframe {
+                margin: 1em 0;
+            }
+
+            /* Titles */
+
+            .header,
+            .location-indicator,
+            .day-indicator,
+            .post-indicator {
+                display: block;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            /* Backgrounded */
+
+            .post-indicator, .context {
+                padding: 0 1em;
+                border-radius: 10px;
+            }
+
+            .location-indicator {
+                margin: 150px 0 0 0;
+                text-align: right;
+
+                color: red;
+                opacity: 0.5;
+                /*background-color: red;
+                color: white;*/
+                font-size: 4em;
+                /*font-style: italic;*/
+            }
+
+            .location-indicator::after {
+                display: block;
+                font-size: 0.2em;
+                margin-top: -0.5em;
+                opacity: 0.3;
+                content: "\A"attr(data-duration);
+            }
+
+            .day-indicator {
+                margin: 150px 0 0 0;
+                text-align: left;
+                /*margin-left: -2em;*/
+
+                color: red;
+                opacity: 0.75;
+                font-size: 3em;
+            }
+
+            .day-indicator::after {
+                display: block;
+                font-size: 0.2em;
+                margin-top: -0.5em;
+                opacity: 0.3;
+                content: "\A""Day "attr(data-day);
+            }
+
+            .post-indicator {
+                margin-top: 100px;
+                text-align: center;
+
+                font-size: 1.3em;
+
+                opacity: 0.75;
+                background-color: red;
+                color: white;
+            }
+
+            .delete {
+                display: none;
+            }
+
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/bigpicture@2.1.1/dist/BigPicture.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            Charles in Senegal
+        </div>
+
+        <div class="posts">
+            <p>
+                <em>In February or March 2016, I spent 10 days in Senegal with my dad who traveled there regularly for work.</em>
+            </p>
+
+            <div class="post" data-created="2016-03-25T15:32:15+0100" data-modified="2016-03-25T15:32:15+0100">
+                <span class="post-indicator">
+                    A bit of local music to get started :)
+                </span>
+
+                <iframe src="https://open.spotify.com/embed/track/2dBAE5M2I43LeyHeF4MMvc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+
+            <span class="location-indicator">Dakar</span>
+
+            <div class="post" data-created="2016-03-25T15:32:15+0100" data-modified="2016-03-25T15:32:15+0100">
+                <span class="post-indicator">
+                    Downtown
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1bl3129mulgwy.jpg"><img data-bp="img-reduced/1bl3129mulgwy.jpg" src="img-thumbs/1bl3129mulgwy.jpg"/></a>
+                    <a href="img-reduced/1bl312aphadde.jpg"><img data-bp="img-reduced/1bl312aphadde.jpg" src="img-thumbs/1bl312aphadde.jpg"/></a>
+                    <a href="img-reduced/1bl312atfem7m.jpg"><img data-bp="img-reduced/1bl312atfem7m.jpg" src="img-thumbs/1bl312atfem7m.jpg"/></a>
+                    <a href="img-reduced/1bl312901870i.jpg"><img data-bp="img-reduced/1bl312901870i.jpg" src="img-thumbs/1bl312901870i.jpg"/></a>
+                    <a href="img-reduced/1bl3129lxiegi.jpg"><img data-bp="img-reduced/1bl3129lxiegi.jpg" src="img-thumbs/1bl3129lxiegi.jpg"/></a>
+                    <a href="img-reduced/1bl312ankos9u.jpg"><img data-bp="img-reduced/1bl312ankos9u.jpg" src="img-thumbs/1bl312ankos9u.jpg"/></a>
+                    <a href="img-reduced/1bl31293yo5g2.jpg"><img data-bp="img-reduced/1bl31293yo5g2.jpg" src="img-thumbs/1bl31293yo5g2.jpg"/></a>
+                    <a href="img-reduced/1bl3129c4yj4y.jpg"><img data-bp="img-reduced/1bl3129c4yj4y.jpg" src="img-thumbs/1bl3129c4yj4y.jpg"/></a>
+                </div>
+            </div>
+            <div class="post" data-created="2016-03-18T01:46:28+0100" data-modified="2016-03-19T21:31:35+0100">
+                <span class="post-indicator">
+                    The heart-surgery center for children
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1bl1ugvq9lmgy.jpg"><img data-bp="img-reduced/1bl1ugvq9lmgy.jpg" src="img-thumbs/1bl1ugvq9lmgy.jpg"/></a>
+                    <a href="img-reduced/1bl1ugv93mcgi.jpg"><img data-bp="img-reduced/1bl1ugv93mcgi.jpg" src="img-thumbs/1bl1ugv93mcgi.jpg"/></a>
+                    <a href="img-reduced/1bl1ugvd15lo2.jpg"><img data-bp="img-reduced/1bl1ugvd15lo2.jpg" src="img-thumbs/1bl1ugvd15lo2.jpg"/></a>
+                </div>
+
+                <p>
+                    The heart surgery center construction site started in July 2015 and should be over before the end of the year.
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-18T09:53:39+0100" data-modified="2016-03-18T09:53:39+0100">
+                <span class="post-indicator">
+                    Jean Mermoz french school
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1bl336vimtgqa.jpg"><img data-bp="img-reduced/1bl336vimtgqa.jpg" src="img-thumbs/1bl336vimtgqa.jpg"/></a>
+                    <a href="img-reduced/1bl336wvhm57m.jpg"><img data-bp="img-reduced/1bl336wvhm57m.jpg" src="img-thumbs/1bl336wvhm57m.jpg"/></a>
+                    <a href="img-reduced/1bl336w0wvyn6.jpg"><img data-bp="img-reduced/1bl336w0wvyn6.jpg" src="img-thumbs/1bl336w0wvyn6.jpg"/></a>
+                    <a href="img-reduced/1bl336wos340i.jpg"><img data-bp="img-reduced/1bl336wos340i.jpg" src="img-thumbs/1bl336wos340i.jpg"/></a>
+                    <a href="img-reduced/1bl336wkx0z6q.jpg"><img data-bp="img-reduced/1bl336wkx0z6q.jpg" src="img-thumbs/1bl336wkx0z6q.jpg"/></a>
+                    <a href="img-reduced/1bl336x7167de.jpg"><img data-bp="img-reduced/1bl336x7167de.jpg" src="img-thumbs/1bl336x7167de.jpg"/></a>
+                    <a href="img-reduced/1bl336wwsz0ky.jpg"><img data-bp="img-reduced/1bl336wwsz0ky.jpg" src="img-thumbs/1bl336wwsz0ky.jpg"/></a>
+                    <a href="img-reduced/1bl336vbp5jea.jpg"><img data-bp="img-reduced/1bl336vbp5jea.jpg" src="img-thumbs/1bl336vbp5jea.jpg"/></a>
+                    <a href="img-reduced/1bl336vhl2veq.jpg"><img data-bp="img-reduced/1bl336vhl2veq.jpg" src="img-thumbs/1bl336vhl2veq.jpg"/></a>
+                </div>
+                <p>
+                    It felt like a world in a world. It's huge, arranged in tiers, open. Quite a good moment and an architectural experience.
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-19T22:56:15+0100" data-modified="2016-03-20T00:31:21+0100">
+                <span class="post-indicator">
+                    Heart surgery
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1bl8q7u6ndkaa.jpg"><img data-bp="img-reduced/1bl8q7u6ndkaa.jpg" src="img-thumbs/1bl8q7u6ndkaa.jpg"/></a>
+                    <a href="img-reduced/1bl8q7udg1z1u.jpg"><img data-bp="img-reduced/1bl8q7udg1z1u.jpg" src="img-thumbs/1bl8q7udg1z1u.jpg"/></a>
+                    <a href="img-reduced/1bl8q7vdojmv6.jpg"><img data-bp="img-reduced/1bl8q7vdojmv6.jpg" src="img-thumbs/1bl8q7vdojmv6.jpg"/></a>
+                    <a href="img-reduced/1bl8q7vaj0raq.jpg"><img data-bp="img-reduced/1bl8q7vaj0raq.jpg" src="img-thumbs/1bl8q7vaj0raq.jpg"/></a>
+                </div>
+
+                <p>
+                    I didn't quite understand what was wrong with this heart but I fixed it anyway.
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-20T12:26:39+0100" data-modified="2016-03-20T12:26:39+0100">
+                <span class="post-indicator">
+                    Our home: The Casa Mara
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blas8w6swob6.jpg"><img data-bp="img-reduced/1blas8w6swob6.jpg" src="img-thumbs/1blas8w6swob6.jpg"/></a>
+                </div>
+
+                <p>
+                    A whole sole fish at home! Super tasty, 10€ 🥴!
+                    The Casa Mara is a cozy and friendly place as there are many in Senegal.
+                </p>
+            </div>
+
+            <span class="location-indicator">Saint-Louis</span>
+
+            <div class="post" data-created="2016-03-20T12:27:25+0100" data-modified="2016-03-20T12:27:25+0100">
+                <span class="post-indicator">
+                    On the road
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blasbd7c6rte.jpg"><img data-bp="img-reduced/1blasbd7c6rte.jpg" src="img-thumbs/1blasbd7c6rte.jpg"/></a>
+                    <a href="img-reduced/1blasbd843zgy.jpg"><img data-bp="img-reduced/1blasbd843zgy.jpg" src="img-thumbs/1blasbd843zgy.jpg"/></a>
+                    <a href="img-reduced/1blasbcbcyfw2.jpg"><img data-bp="img-reduced/1blasbcbcyfw2.jpg" src="img-thumbs/1blasbcbcyfw2.jpg"/></a>
+                    <a href="img-reduced/1blasbch43baq.jpg"><img data-bp="img-reduced/1blasbch43baq.jpg" src="img-thumbs/1blasbch43baq.jpg"/></a>
+                    <a href="img-reduced/1blasbcefa22q.jpg"><img data-bp="img-reduced/1blasbcefa22q.jpg" src="img-thumbs/1blasbcefa22q.jpg"/></a>
+                    <a href="img-reduced/1blasbbja1ngy.jpg"><img data-bp="img-reduced/1blasbbja1ngy.jpg" src="img-thumbs/1blasbbja1ngy.jpg"/></a>
+                    <a href="img-reduced/1blasbc7ye4sy.jpg"><img data-bp="img-reduced/1blasbc7ye4sy.jpg" src="img-thumbs/1blasbc7ye4sy.jpg"/></a>
+                    <a href="img-reduced/1blasbcjxzkqq.jpg"><img data-bp="img-reduced/1blasbcjxzkqq.jpg" src="img-thumbs/1blasbcjxzkqq.jpg"/></a>
+                    <a href="img-reduced/1blasbbdizcs2.jpg"><img data-bp="img-reduced/1blasbbdizcs2.jpg" src="img-thumbs/1blasbbdizcs2.jpg"/></a>
+                    <a href="img-reduced/1blasbd7c6rte.jpg"><img data-bp="img-reduced/1blasbd7c6rte.jpg" src="img-thumbs/1blasbd7c6rte.jpg"/></a>
+                </div>
+            </div>
+            <div class="post" data-created="2016-03-20T17:32:12+0100" data-modified="2016-03-20T17:32:12+0100">
+                <span class="post-indicator">
+                    Downtown
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blbk5mgeph8y.jpg"><img data-bp="img-reduced/1blbk5mgeph8y.jpg" src="img-thumbs/1blbk5mgeph8y.jpg"/></a>
+                    <a href="img-reduced/1blbk5mkwf3gy.jpg"><img data-bp="img-reduced/1blbk5mkwf3gy.jpg" src="img-thumbs/1blbk5mkwf3gy.jpg"/></a>
+                    <a href="img-reduced/1blbk5mg4u0oi.jpg"><img data-bp="img-reduced/1blbk5mg4u0oi.jpg" src="img-thumbs/1blbk5mg4u0oi.jpg"/></a>
+                    <a href="img-reduced/1blbk5mehu7mq.jpg"><img data-bp="img-reduced/1blbk5mehu7mq.jpg" src="img-thumbs/1blbk5mehu7mq.jpg"/></a>
+                    <a href="img-reduced/1blbk5lqkqsw2.jpg"><img data-bp="img-reduced/1blbk5lqkqsw2.jpg" src="img-thumbs/1blbk5lqkqsw2.jpg"/></a>
+                    <a href="img-reduced/1blbk5l9aw1si.jpg"><img data-bp="img-reduced/1blbk5l9aw1si.jpg" src="img-thumbs/1blbk5l9aw1si.jpg"/></a>
+                    <a href="img-reduced/1blbk5mk316c2.jpg"><img data-bp="img-reduced/1blbk5mk316c2.jpg" src="img-thumbs/1blbk5mk316c2.jpg"/></a>
+                    <a href="img-reduced/1blbk5l3d90he.jpg"><img data-bp="img-reduced/1blbk5l3d90he.jpg" src="img-thumbs/1blbk5l3d90he.jpg"/></a>
+                    <a href="img-reduced/1blbk5lzy1lz6.jpg"><img data-bp="img-reduced/1blbk5lzy1lz6.jpg" src="img-thumbs/1blbk5lzy1lz6.jpg"/></a>
+                    <a href="img-reduced/1blbk5lighexe.jpg"><img data-bp="img-reduced/1blbk5lighexe.jpg" src="img-thumbs/1blbk5lighexe.jpg"/></a>
+                    <a href="img-reduced/1blbk5lb52ssi.jpg"><img data-bp="img-reduced/1blbk5lb52ssi.jpg" src="img-thumbs/1blbk5lb52ssi.jpg"/></a>
+                    <a href="img-reduced/1blbk5ma588gy.jpg"><img data-bp="img-reduced/1blbk5ma588gy.jpg" src="img-thumbs/1blbk5ma588gy.jpg"/></a>
+                    <a href="img-reduced/1blbk5mdlk24i.jpg"><img data-bp="img-reduced/1blbk5mdlk24i.jpg" src="img-thumbs/1blbk5mdlk24i.jpg"/></a>
+                    <a href="img-reduced/1blbk5ls53lxu.jpg"><img data-bp="img-reduced/1blbk5ls53lxu.jpg" src="img-thumbs/1blbk5ls53lxu.jpg"/></a>
+                    <a href="img-reduced/1blbk5lf10s6a.jpg"><img data-bp="img-reduced/1blbk5lf10s6a.jpg" src="img-thumbs/1blbk5lf10s6a.jpg"/></a>
+                </div>
+
+                <p>
+                    Saint-Louis is in the most northern area of the Senegalese coast, right next to the border with Mauritania.
+                    It's been an important city in the history of aviation because it was the last on the way to Brazil before crossing the Atlantic.
+                    This city is also noteworthy for the numerous buildings from the colonial era, which I'll try to show in a later post.
+                </p>
+            </div>
+
+            <div class="post" data-created="2016-03-20T17:52:45+0100" data-modified="2016-03-20T17:54:59+0100">
+                <span class="post-indicator">
+                    The Hotel de la Poste
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blbm16dcmofm.jpg"><img data-bp="img-reduced/1blbm16dcmofm.jpg" src="img-thumbs/1blbm16dcmofm.jpg"/></a>
+                    <a href="img-reduced/1blbm17acj402.jpg"><img data-bp="img-reduced/1blbm17acj402.jpg" src="img-thumbs/1blbm17acj402.jpg"/></a>
+                    <a href="img-reduced/1blbm175ubbo2.jpg"><img data-bp="img-reduced/1blbm175ubbo2.jpg" src="img-thumbs/1blbm175ubbo2.jpg"/></a>
+                    <a href="img-reduced/1blbm17lsgmaa.jpg"><img data-bp="img-reduced/1blbm17lsgmaa.jpg" src="img-thumbs/1blbm17lsgmaa.jpg"/></a>
+                </div>
+
+                <p>
+                    What a place again!
+
+                    The <em>Hôtel De La Poste</em> of Saint-Louis is a perfectly well preserved construction from 1850, built around a patio.
+                </p><p class="delete">
+                    The colonial life must have been terribly comfortable.
+                </p>
+            </div>
+
+            <div class="post" data-created="2016-03-20T17:52:45+0100" data-modified="2016-03-20T17:54:59+0100">
+                <span class="post-indicator">
+                    The Mermoz Hotel
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/mermoz1.jpg"><img data-bp="img-reduced/mermoz1.jpg" src="img-thumbs/mermoz1.jpg"/></a>
+                    <a href="img-reduced/mermoz2.jpg"><img data-bp="img-reduced/mermoz2.jpg" src="img-thumbs/mermoz2.jpg"/></a>
+                    <a href="img-reduced/mermoz3.jpg"><img data-bp="img-reduced/mermoz3.jpg" src="img-thumbs/mermoz3.jpg"/></a>
+                </div>
+
+                <p>
+                    We also passed by the Mermoz hotel. What do you think? Whataplace!!
+                </p>
+            </div>
+
+            <div class="post delete" data-created="2016-03-21T12:58:42+0100" data-modified="2016-03-25T15:13:40+0100">
+                Could you or would you want to live in or have deal with Senegal?
+                Here are some first thoughts.
+                It seems to me that foreigners can have complete normal relationships with local people.
+                Walking in the street, you are not stopped or stared at much more than a local. You don't feel as an intruder. As far as I experimented, it is also safe, in spite of the obvious difference of wealth between you and some people around.
+                This doesn't apply at all in touristic places, where you become a target: Going from the airport to the city, the cab will ask you for 10.000 CFA (15€) although it should be max 4.000 (6€). To avoid that, always negotiate the price before you jump in a cab. Soumbedioune market is also one of those places where tourists are targets.
+                Senegalese I met were mostly jovial, chill and warm people, and also had a great sense of humor. They are resolutely positive, choosing to laugh at things and try more rather than to wallow in self-pity.
+                Lot of things are often approximate. Punctuality, highway code, or the quality of the constructions, whether the structural works or the finish: Fixation on the walls are often loose, some surfaces are not exactly vertical, some switches are on the wrong side of the door or on the other side of the room, some pipes are visible where they should not be.
+                Dakar as well as Saint-Louis are quite dirty as you can see on the pictures.
+                The climate is very pleasant. 9 month of the year, it's 25 degree, not a single cloud, just a bit of a pleasant draft.
+                Traveling here, I wondered: Would I want to live or have regular activities with Senegal?
+                In turn, it raised the question of what really matters in the day to day life. What makes you feel good where you are? To which extent is it the climate? The social climate? The cultural proximity with people? How clean the city is? The administration efficiency?
+            </div>
+
+            <span class="location-indicator">Dakar II</span>
+
+            <div class="post" data-created="2016-03-22T14:32:56+0100" data-modified="2016-03-22T14:32:56+0100">
+                <span class="post-indicator">
+                    On the way
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blieuwgmoatu.jpg"><img data-bp="img-reduced/1blieuwgmoatu.jpg" src="img-thumbs/1blieuwgmoatu.jpg"/></a>
+                    <a href="img-reduced/1blieuv8bnq8y.jpg"><img data-bp="img-reduced/1blieuv8bnq8y.jpg" src="img-thumbs/1blieuv8bnq8y.jpg"/></a>
+                    <a href="img-reduced/1blieuwj2h642.jpg"><img data-bp="img-reduced/1blieuwj2h642.jpg" src="img-thumbs/1blieuwj2h642.jpg"/></a>
+                    <a href="img-reduced/1blieuwusxc5u.jpg"><img data-bp="img-reduced/1blieuwusxc5u.jpg" src="img-thumbs/1blieuwusxc5u.jpg"/></a>
+                    <a href="img-reduced/1blieuvqufr0y.jpg"><img data-bp="img-reduced/1blieuvqufr0y.jpg" src="img-thumbs/1blieuvqufr0y.jpg"/></a>
+                    <a href="img-reduced/1blieuvtckytu.jpg"><img data-bp="img-reduced/1blieuvtckytu.jpg" src="img-thumbs/1blieuvtckytu.jpg"/></a>
+                </div>
+            </div>
+            <div class="post" data-created="2016-03-22T14:12:35+0100" data-modified="2016-03-22T14:12:35+0100">
+                <span class="post-indicator">
+                    Soumbédioune
+                </span class="post-indicator">
+
+                <p class="delete">
+                    At first you're with some friends in the street. Some guys talk to you. They don't even seem to know each other. Each of you just have an independent friendly conversation.
+                    Then he slowly starts telling he's an artist. His stuff are in a store near by. Then, you discover the store is not at the ground level, but on the first floor of a building, and before you realize you and your friends are in the very middle of a dozen of stores where all tenants are having a single goal: Make you buy stuff you don't want and pay 10 times the price.
+
+                    One of the technique is to split the group: Each member is taken apart and brought in a different room of the connected stores by a merchant.
+
+                    They are very insisting and what makes it hard is that they keep behaving in a very friendly way. They just do not stop when you ask them to.
+                </p>
+
+                <div class="gallery">
+                    <a href="img-reduced/1bliczzd6ulg2.jpg"><img data-bp="img-reduced/1bliczzd6ulg2.jpg" src="img-thumbs/1bliczzd6ulg2.jpg"/></a>
+                </div>
+
+                <p>
+                    There, as in most touristic spots, you're a target. Go discover the numerous tricks by yourself :)
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-22T10:42:03+0100" data-modified="2016-03-22T10:42:03+0100">
+                <span class="post-indicator">
+                    Going to the church with Edouard
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blhtrpp6i9le.jpg"><img data-bp="img-reduced/1blhtrpp6i9le.jpg" src="img-thumbs/1blhtrpp6i9le.jpg"/></a>
+                    <a href="img-reduced/1blhtropc7qgy.jpg"><img data-bp="img-reduced/1blhtropc7qgy.jpg" src="img-thumbs/1blhtropc7qgy.jpg"/></a>
+                </div>
+
+                <p>
+                    Sunday for the first time I went to church willingly! Gorgeous singing and friendly atmosphere.
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-22T12:24:11+0100" data-modified="2016-03-22T13:49:49+0100">
+                <span class="post-indicator">
+                    Les dents de la mer
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1bli33k3bxjnm.jpg"><img data-bp="img-reduced/1bli33k3bxjnm.jpg" src="img-thumbs/1bli33k3bxjnm.jpg"/></a>
+                </div>
+
+                <p>
+                    The "dents de la mer", the house of Léopold Sédar Senghor, first president of Senegal after the independance in 1960 and national icone who died in 2001 in Paris.
+                </p><p>
+                    It is a museum since 2014. Barthélémy Sarr, Senghor's life long aide-de-camp, kindly gave us a tour of the inside, but we weren't allowed to make pictures. It is a splendid setting in the purest 70s style. Everything stayed exactly as it was when Senghor last left the house.
+                </p><p>
+                    Eiffage Senegal made a great work renovating the house for free. It is a french construction industry playing in a leading role there. As far as I heard and could see, it provides high quality work and takes part in social actions such as this one or the construction of the surgery center with no benefits.
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-25T12:06:51+0100" data-modified="2016-03-25T12:06:51+0100">
+                <span class="post-indicator">
+                    The Art Village
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blt04ofzor4i.jpg"><img data-bp="img-reduced/1blt04ofzor4i.jpg" src="img-thumbs/1blt04ofzor4i.jpg"/></a>
+                    <a href="img-reduced/1blt04ompl00i.jpg"><img data-bp="img-reduced/1blt04ompl00i.jpg" src="img-thumbs/1blt04ompl00i.jpg"/></a>
+                    <a href="img-reduced/1blt04nnww7o2.jpg"><img data-bp="img-reduced/1blt04nnww7o2.jpg" src="img-thumbs/1blt04nnww7o2.jpg"/></a>
+                </div>
+
+                <p class="delete">
+                    It is supported by the state.
+                </p>
+                <p>
+                    I found the art esthetic and expressive, abstract but connected to reality.
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-22T14:42:46+0100" data-modified="2016-03-22T14:42:46+0100">
+                <span class="post-indicator">
+                    Le Phare des Mamelles
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blifr9qpf3tu.jpg"><img data-bp="img-reduced/1blifr9qpf3tu.jpg" src="img-thumbs/1blifr9qpf3tu.jpg"/></a>
+                    <a href="img-reduced/1blifram8upoi.jpg"><img data-bp="img-reduced/1blifram8upoi.jpg" src="img-thumbs/1blifram8upoi.jpg"/></a>
+                    <a href="img-reduced/1blifra562guq.jpg"><img data-bp="img-reduced/1blifra562guq.jpg" src="img-thumbs/1blifra562guq.jpg"/></a>
+                    <a href="img-reduced/1bliframtcz5u.jpg"><img data-bp="img-reduced/1bliframtcz5u.jpg" src="img-thumbs/1bliframtcz5u.jpg"/></a>
+                </div>
+
+                <p>
+                    The "Phare des mamelles" is the most powerful lighthouse from Senegal, visible 55km away.
+                </p>
+            </div>
+            <div class="post" data-created="2016-03-22T11:48:44+0100" data-modified="2016-03-22T11:48:44+0100">
+                <span class="post-indicator">
+                    The Hospital
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blhzuuaix3gy.jpg"><img data-bp="img-reduced/1blhzuuaix3gy.jpg" src="img-thumbs/1blhzuuaix3gy.jpg"/></a>
+                    <a href="img-reduced/1blhzuuunp3r6.jpg"><img data-bp="img-reduced/1blhzuuunp3r6.jpg" src="img-thumbs/1blhzuuunp3r6.jpg"/></a>
+                    <a href="img-reduced/1blhzuvczjoky.jpg"><img data-bp="img-reduced/1blhzuvczjoky.jpg" src="img-thumbs/1blhzuvczjoky.jpg"/></a>
+                    <a href="img-reduced/1blhzuu5wm3z6.jpg"><img data-bp="img-reduced/1blhzuu5wm3z6.jpg" src="img-thumbs/1blhzuu5wm3z6.jpg"/></a>
+                    <a href="img-reduced/1blhzuun1t4pu.jpg"><img data-bp="img-reduced/1blhzuun1t4pu.jpg" src="img-thumbs/1blhzuun1t4pu.jpg"/></a>
+                    <a href="img-reduced/1blhzuvseaqsi.jpg"><img data-bp="img-reduced/1blhzuvseaqsi.jpg" src="img-thumbs/1blhzuvseaqsi.jpg"/></a>
+                </div>
+
+                <p>
+                    The Hôpital Principal of Dakar is a facility inherited from the colonial times. The architecture is tuned to the local context. Constructions are often built around a patio or feature archways which create shadow in front of the windows and favor fresh drafts.
+                </p>
+            </div>
+
+            <div class="post" data-created="2016-03-23T19:12:32+0100" data-modified="2016-03-23T19:12:32+0100">
+                <span class="post-indicator">
+                    Eating grilled pork
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1blmrxq8m45wy.jpg"><img data-bp="img-reduced/1blmrxq8m45wy.jpg" src="img-thumbs/1blmrxq8m45wy.jpg"/></a>
+                    <a href="img-reduced/1blmrxr7su87m.jpg"><img data-bp="img-reduced/1blmrxr7su87m.jpg" src="img-thumbs/1blmrxr7su87m.jpg"/></a>
+                </div>
+
+                <p>
+                    I hesitated because of the numerous flies hanging around and the water they used for the grill, but my Senegalese friend Edouard made fun of me and eventually, I ate a sausage. Tasty!
+                </p>
+            </div>
+
+            <span class="location-indicator">Around Dakar</span>
+
+            <div class="post" data-created="2016-03-25T15:22:47+0100" data-modified="2016-03-25T15:26:18+0100">
+                <span class="post-indicator">
+                    Gorée Island
+                </span class="post-indicator">
+
+                <p>
+                    Gorée island is half an hour away with a boat from Dakar. It's way cleaner than the continent and architecturally very cute. Tourists are likely the main revenue source. Finding a guide or piece of art will be the least of your problems there.
+                </p>
+
+                <div class="gallery">
+                    <a href="img-reduced/1blti0yy2xv9e.jpg"><img data-bp="img-reduced/1blti0yy2xv9e.jpg" src="img-thumbs/1blti0yy2xv9e.jpg"/></a>
+                    <a href="img-reduced/1blti0zqrnjqq.jpg"><img data-bp="img-reduced/1blti0zqrnjqq.jpg" src="img-thumbs/1blti0zqrnjqq.jpg"/></a>
+                    <a href="img-reduced/1blti0zg8psoy.jpg"><img data-bp="img-reduced/1blti0zg8psoy.jpg" src="img-thumbs/1blti0zg8psoy.jpg"/></a>
+                    <a href="img-reduced/1blti10a5irsy.jpg"><img data-bp="img-reduced/1blti10a5irsy.jpg" src="img-thumbs/1blti10a5irsy.jpg"/></a>
+                    <a href="img-reduced/1blti0yyou9qa.jpg"><img data-bp="img-reduced/1blti0yyou9qa.jpg" src="img-thumbs/1blti0yyou9qa.jpg"/></a>
+                    <a href="img-reduced/1blti0zfqtglu.jpg"><img data-bp="img-reduced/1blti0zfqtglu.jpg" src="img-thumbs/1blti0zfqtglu.jpg"/></a>
+                    <a href="img-reduced/1blti10hr7hma.jpg"><img data-bp="img-reduced/1blti10hr7hma.jpg" src="img-thumbs/1blti10hr7hma.jpg"/></a>
+                    <a href="img-reduced/1blti10toxvpe.jpg"><img data-bp="img-reduced/1blti10toxvpe.jpg" src="img-thumbs/1blti10toxvpe.jpg"/></a>
+                    <a href="img-reduced/1blti0z71h9xu.jpg"><img data-bp="img-reduced/1blti0z71h9xu.jpg" src="img-thumbs/1blti0z71h9xu.jpg"/></a>
+                    <a href="img-reduced/1blti0zdoe78y.jpg"><img data-bp="img-reduced/1blti0zdoe78y.jpg" src="img-thumbs/1blti0zdoe78y.jpg"/></a>
+                    <a href="img-reduced/1blti10khseoy.jpg"><img data-bp="img-reduced/1blti10khseoy.jpg" src="img-thumbs/1blti10khseoy.jpg"/></a>
+                    <a href="img-reduced/1blti0ze5snoy.jpg"><img data-bp="img-reduced/1blti0ze5snoy.jpg" src="img-thumbs/1blti0ze5snoy.jpg"/></a>
+                    <a href="img-reduced/1bltfz5httgbm.jpg"><img data-bp="img-reduced/1bltfz5httgbm.jpg" src="img-thumbs/1bltfz5httgbm.jpg"/></a>
+                    <a href="img-reduced/1blti0z6sycxe.jpg"><img data-bp="img-reduced/1blti0z6sycxe.jpg" src="img-thumbs/1blti0z6sycxe.jpg"/></a>
+                    <a href="img-reduced/1blti10sc7m4i.jpg"><img data-bp="img-reduced/1blti10sc7m4i.jpg" src="img-thumbs/1blti10sc7m4i.jpg"/></a>
+                    <a href="img-reduced/1blti10bnpmr6.jpg"><img data-bp="img-reduced/1blti10bnpmr6.jpg" src="img-thumbs/1blti10bnpmr6.jpg"/></a>
+                </div>
+            </div>
+            <div class="post" data-created="2016-03-23T19:05:30+0100" data-modified="2016-03-23T19:05:30+0100">
+                <span class="post-indicator">
+                    The Pink Lake
+                </span class="post-indicator">
+
+                <p>
+                    It's pink because of some bacteria in the water. It's even more salty than the Dead Sea and the salt is being mined by the pirogues.
+                </p>
+
+                <div class="gallery">
+                    <a href="img-reduced/1blmramow1sfm.jpg"><img data-bp="img-reduced/1blmramow1sfm.jpg" src="img-thumbs/1blmramow1sfm.jpg"/></a>
+                    <a href="img-reduced/1blmram46p6gy.jpg"><img data-bp="img-reduced/1blmram46p6gy.jpg" src="img-thumbs/1blmram46p6gy.jpg"/></a>
+                    <a href="img-reduced/1blmral3c5402.jpg"><img data-bp="img-reduced/1blmral3c5402.jpg" src="img-thumbs/1blmral3c5402.jpg"/></a>
+                </div>
+            </div>
+            <div class="post" data-created="2016-03-22T12:43:56+0100" data-modified="2016-03-22T12:43:56+0100">
+                <span class="post-indicator">
+                    Le radeau de la méduse
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1bli4wgqqzbtu.jpg"><img data-bp="img-reduced/1bli4wgqqzbtu.jpg" src="img-thumbs/1bli4wgqqzbtu.jpg"/></a>
+                </div>
+
+                <p>
+                    A gigantic desert beach in the middle of nowhere. It makes a strange impression to see such a nice place with no people or thing around. I think you can't find this in Europe anymore!
+                </p>
+                <p>
+                    The SUV sinked into the sand on the way back, but we were close to the cities and we got helped by some locals. We deflated the back tires to get out!
+                </p>
+                <p>
+                    <em>Le radeau de la méduse</em> sunk nearby!
+                </p>
+            </div>
+
+            <span class="location-indicator">Dakar III</span>
+
+            <div class="post" data-created="2016-03-25T15:28:56+0100" data-modified="2016-03-25T15:28:56+0100">
+                <span class="post-indicator">
+                    Chilling with Edouard
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/1bltil78mfog2.jpg"><img data-bp="img-reduced/1bltil78mfog2.jpg" src="img-thumbs/1bltil78mfog2.jpg"/></a>
+                    <a href="img-reduced/1bltil8cn0boi.jpg"><img data-bp="img-reduced/1bltil8cn0boi.jpg" src="img-thumbs/1bltil8cn0boi.jpg"/></a>
+                    <a href="img-reduced/1bltil8efm27m.jpg"><img data-bp="img-reduced/1bltil8efm27m.jpg" src="img-thumbs/1bltil8efm27m.jpg"/></a>
+                    <a href="img-reduced/1bltil8t8zeiq.jpg"><img data-bp="img-reduced/1bltil8t8zeiq.jpg" src="img-thumbs/1bltil8t8zeiq.jpg"/></a>
+                    <a href="img-reduced/1bltil8xpop1u.jpg"><img data-bp="img-reduced/1bltil8xpop1u.jpg" src="img-thumbs/1bltil8xpop1u.jpg"/></a>
+                </div>
+            </div>
+
+            <div class="post" data-created="2016-03-25T15:28:56+0100" data-modified="2016-03-25T15:28:56+0100">
+                <span class="post-indicator">
+                    Djoloff hotel
+                </span class="post-indicator">
+
+                <div class="gallery">
+                    <a href="img-reduced/djoloff1.png"><img data-bp="img-reduced/djoloff1.png" src="img-thumbs/djoloff1.png"/></a>
+                    <a href="img-reduced/djoloff3.jpg"><img data-bp="img-reduced/djoloff3.jpg" src="img-thumbs/djoloff3.jpg"/></a>
+                    <a href="img-reduced/djoloff2.jpg"><img data-bp="img-reduced/djoloff2.jpg" src="img-thumbs/djoloff2.jpg"/></a>
+                    <a href="img-reduced/djoloff4.jpg"><img data-bp="img-reduced/djoloff4.jpg" src="img-thumbs/djoloff4.jpg"/></a>
+                </div>
+            </div>
+
+            <span class="location-indicator">Tchüßi</span>
+
+            <div class="post" data-created="2016-03-31T00:25:56+0200" data-modified="2016-03-31T00:30:04+0200">
+                <span class="post-indicator">
+                    Safety reminder
+                </span class="post-indicator">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RVrNcIwp5rU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <p>
+                    I almost forgot to post about how my travel started. Security is important. Don't miss a chance to update your knowledge of airplanes security rules.
+                </p>
+            </div>
+        </div>
+        <script>
+            (function () {
+
+              /*
+               * Setup galleries.
+               *
+               * Skips the panoramas (image title containing ".vr.") that would be inside the gallery container, because they are better visualised with the browser viewer (it allows to zoom).
+               */
+              (function () {
+                var setupGallery = function(gallery) {
+                  // Find gallery pictures
+                  var galleryPics = gallery.querySelectorAll('img:not([src*=".vr."])');
+
+                  // Open gallery on picture click.
+                  var imageLinks = gallery.querySelectorAll('a:not([href*=".vr."])');
+                  for (var i = 0; i < imageLinks.length; i++) {
+                    imageLinks[i].addEventListener('click', function (e) {
+                      e.preventDefault()
+                      BigPicture({
+                        el: e.target,
+                        gallery: galleryPics,
+                      });
+                    })
+                  }
+                }
+
+                var galleries = document.querySelectorAll('.gallery')
+                for (var i = 0; i < galleries.length; i++) {
+                  setupGallery(galleries[i]);
+                }
+              })();
+
+            })();
+          </script>
+    </body>
+</html>
